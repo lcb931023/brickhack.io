@@ -10,6 +10,11 @@
   %b Email:
   = @participant.email
 %p
+  %b School:
+  = @participant.school.name
+  in
+  = "#{@participant.school.city}, #{@participant.school.state}"
+%p
   %b City:
   = @participant.city
 %p
